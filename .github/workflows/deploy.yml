@@ -23,7 +23,7 @@ jobs:
           extended: true
       # build site
       - name: build
-        run: hugo --minify --baseURL "https://nandstand.github.io/hugo-sandbox/"
+        run: hugo --minify
       # deploy to gh-pages
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3

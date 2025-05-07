@@ -1,6 +1,6 @@
-baseURL: https://example.org/
+baseURL: https://nandstand.github.io/hugo-sandbox/
 languageCode: en-us
-title: Hugo Sandbox
+title: Hello world!
 theme: hyde
 
 params:
