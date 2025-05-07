@@ -2,6 +2,8 @@ baseURL: https://nandstand.github.io/hugo-sandbox/
 languageCode: en-us
 title: Hello world!
 theme: hyde
+frontmatter:
+  format: yaml
 
 params:
   themeColor: theme-base-0c
