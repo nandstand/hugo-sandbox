@@ -5,7 +5,7 @@ theme: hyde
 
 params:
   themeColor: theme-base-0c
-  description: Test site
+  description: Learning Hugo and GitHub CI/CD
 
 menus:
   main:
