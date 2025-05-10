@@ -40,21 +40,25 @@ jobs:
           globs: '**/*.md'
           config: .markdownlint.yaml
 
-  html-test:
+  link-check:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: checkout site source
-        uses: actions/checkout@v4
       - name: download site build
         uses: actions/download-artifact@v4
         with: 
           name: site 
           path: ./public
-      - name: html test (link checks, img alt tags)
-        uses: wjdp/htmltest-action@v0.13.0-rc1
-        with: 
-          config: .htmltest.yml
+      - name: link check - lychee, internal links only
+        uses: lycheeverse/lychee-action@v2.4.1
+        with:
+          args: >
+            --internal
+            --no-progress
+            --verbose
+            --accept 200 206
+            ./public/**/*.html
+
 
   deploy:
     needs: build
