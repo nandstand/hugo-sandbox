@@ -56,7 +56,8 @@ jobs:
             --offline
             --no-progress
             --verbose
-            --accept 200 206
+            --accept 200,206
+            --base ./public
             ./public/**/*.html
 
 
