@@ -54,6 +54,7 @@ jobs:
         with:
           args: >
             --offline
+            --include https://nandstand.github.io/hugo-sandbox
             --no-progress
             --verbose
             --accept 200,206
