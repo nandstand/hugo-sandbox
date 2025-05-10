@@ -1,7 +1,6 @@
 # .markdownlint.yaml
 default: true
 
-blanks-around-headings: false
 no-inline-html: false        # allow raw HTML/shortcodes
 line-length: false           # ignore long lines
 first-line-h1: false         # use front-matter title
