@@ -10,8 +10,6 @@ Here is some **text.**
 
 Test test test
 
-[Here is a link to a post (should be good)]({{< ref "posts/second.md" >}}).
+[Here is a link to a post using a hugo shortcode (safe)]({{< ref "posts/second.md" >}}).
 
-[Here is a link to a heading on the same post (should be good, too)]({{< ref "posts/second.md#two" >}}).
-
-[Here is a link to a heading that does not exist]({{< ref "posts/second.md#bad" >}}).
+[Here is a link to a post using its URL (unsafe)](https://nandstand.github.io/hugo-sandbox/posts/second/)
