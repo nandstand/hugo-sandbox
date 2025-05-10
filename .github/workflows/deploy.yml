@@ -54,11 +54,11 @@ jobs:
         with:
           args: >
             --include https://nandstand.github.io/hugo-sandbox
+            --base ./public
             --no-progress
             --verbose
             --accept 200,206
-            --base ./public
-            ./public/**/*.html
+            './public/**/*.html'
 
 
   deploy:
