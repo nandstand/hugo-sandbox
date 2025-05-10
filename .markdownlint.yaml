@@ -6,4 +6,4 @@ line-length: false           # ignore long lines
 first-line-h1: false         # use front-matter title
 
 # ignore Hugo front-matter
-frontMatter: "^---[\\s\\S]*?---\\s*$"
+#frontMatter: "^---[\\s\\S]*?---\\s*$"
