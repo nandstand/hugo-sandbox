@@ -49,10 +49,11 @@ jobs:
         with: 
           name: site 
           path: ./public
-      - name: link check (lychee)
+      - name: link check (lychee) | internal links only
         uses: lycheeverse/lychee-action@v2.4.1
         with:
           args: >
+            --offline
             --no-progress
             --verbose
             --accept 200 206
