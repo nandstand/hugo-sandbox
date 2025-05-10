@@ -4,7 +4,7 @@ LogLevel: INFO
 DirectoryPath: ./public
 
 CheckInternal: true
-CheckExternal: false
+CheckExternal: true
 
 CheckImgHTTP: true
 CheckImgAlt: true
