@@ -46,7 +46,7 @@ jobs:
       - name: checkout site source
         uses: actions/checkout@v4
       - name: run spellcheck (PySpelling)
-        uses: uses: rojopolis/spellcheck-github-actions@v0
+        uses: rojopolis/spellcheck-github-actions@v0
         with:
           source_files: '**/*.md'
           task_name: Markdown
