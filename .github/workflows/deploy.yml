@@ -53,7 +53,7 @@ jobs:
         uses: lycheeverse/lychee-action@v2.4.1
         with:
           args: >
-            --include https://nandstand.github.io/hugo-sandbox
+            --include https://nandstand.github.io/hugo-sandbox/*
             --no-progress
             --verbose
             --accept 200,206
