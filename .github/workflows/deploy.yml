@@ -40,6 +40,20 @@ jobs:
           globs: '**/*.md'
           config: .markdownlint.yaml
 
+  html-test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: download site build
+        uses: actions/download-artifact@v4
+        with: 
+          name: site 
+          path: ./public
+      - name: html test (link checks, img alt tags)
+        uses: wjdp/htmltest-action@v0.13.0-rc1
+        with: 
+          config: .htmltest.yml
+
   deploy:
     needs: build
     runs-on: ubuntu-latest

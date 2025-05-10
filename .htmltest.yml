@@ -1,0 +1,11 @@
+# .htmltest.yml
+
+LogLevel: INFO
+DirectoryPath: ./public
+
+CheckInternal: true
+CheckExternal: false
+
+CheckImgHTTP: true
+CheckImgAlt: true
+AltIgnoreEmpty: false
