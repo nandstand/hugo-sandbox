@@ -1,7 +1,7 @@
 # .htmltest.yml
 
 LogLevel: INFO
-DirectoryPath: ./public
+DirectoryPath: ./wrong_dir
 
 CheckInternal: true
 CheckExternal: true
