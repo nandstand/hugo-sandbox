@@ -59,7 +59,26 @@ jobs:
             --verbose
             --accept 200,206
             './public/**/*.html'
-
+  
+  accessibility-check:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: download site build
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: ./public
+      - name: set up node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: install Pa11y CI + static server
+        run: npm install -g pa11y-ci http-server
+      - name: serve site locally
+        run: http-server public --port 8080 --silent &
+      - name: run accessibility tests (Pa11y CI)
+        run: pa11y-ci
 
   deploy:
     needs: build
