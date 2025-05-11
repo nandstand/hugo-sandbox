@@ -14,4 +14,4 @@ Test test test
 
 [Here is a link to a post using a hugo shortcode (safe)]({{< ref "posts/second.md" >}}).
 
-[Here is a link to a post using its URL (unsafe)](https://nandstand.github.io/hugo-sandbox/posts/bad-link/).
+[Here is a link to a post using its URL (unsafe)](https://nandstand.github.io/hugo-sandbox/posts/second/).
