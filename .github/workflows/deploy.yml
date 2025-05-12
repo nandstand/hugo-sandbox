@@ -54,6 +54,7 @@ jobs:
         with:
           args: >
             --base https://nandstand.github.io/hugo-sandbox/
+            --root-dir https://nandstand.github.io/hugo-sandbox/
             --timeout 20
             --no-progress
             --verbose
