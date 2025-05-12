@@ -53,7 +53,7 @@ jobs:
         with:
           args: >
             --offline
-            --base ./public
+            --base-url ./public
             --no-progress
             --verbose
             './public/**/*.html'
