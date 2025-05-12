@@ -54,7 +54,7 @@ jobs:
         with:
           args: >
             --include https://nandstand.github.io/hugo-sandbox
-            --base https://nandstand.github.io/hugo-sandbox
+            --base https://nandstand.github.io/
             --no-progress
             --verbose
             --accept 200,206
