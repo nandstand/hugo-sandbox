@@ -49,12 +49,11 @@ jobs:
         with: 
           name: site 
           path: ./public
-      - name: link check (lychee) | link check live site | internal links
+      - name: link check (lychee) | link check live site
         uses: lycheeverse/lychee-action@v2.4.1
         with:
           args: >
-            --include https://nandstand.github.io/hugo-sandbox
-            --base https://nandstand.github.io/
+            --timeout 10
             --no-progress
             --verbose
             --accept 200,206
