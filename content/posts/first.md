@@ -8,10 +8,12 @@ title: First
 
 Here is some **text.**
 
-Test test test
+[Here is a link to a post using a hugo relref shortcode (safe)]({{< relref "/posts/second.md" >}}).
 
-Test test test
+[Here is a link to a post using a hugo ref shortcode (safe)]({{< ref "/posts/second.md" >}}).
 
-[Here is a link to a post using a hugo shortcode (safe)]({{< ref "posts/second.md" >}}).
+[Here is a link to a post using an absolute URL (unsafe, not checked by ci link checks)](https://nandstand.github.io/hugo-sandbox/posts/second/).
 
-[Here is a link to a post using its URL (unsafe)](https://nandstand.github.io/hugo-sandbox/posts/second/).
+[Here is a link to a post using a root-relative link](/posts/second/).
+
+[Here is a link to a post using a page-relative link](posts/second/).

@@ -20,7 +20,7 @@ jobs:
           hugo-version: '0.147.1'
           extended: true
       - name: generate ci site build for offline testing
-        run: hugo --minify --config config.yml,config.ci.yml
+        run: hugo --minify --config hugo.yml,hugo.ci.yml
       - name: upload site
         uses: actions/upload-artifact@v4
         with:
