@@ -53,7 +53,8 @@ jobs:
         uses: lycheeverse/lychee-action@v2.4.1
         with:
           args: >
-            --timeout 10
+            --base https://nandstand.github.io/hugo-sandbox/
+            --timeout 20
             --no-progress
             --verbose
             --accept 200,206
