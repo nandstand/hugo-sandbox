@@ -41,7 +41,7 @@ jobs:
           config: .markdownlint.yaml
 
   link-check:
-    needs: build
+    needs: [build, deploy]
     runs-on: ubuntu-latest
     steps:
       - name: download site build
@@ -49,7 +49,7 @@ jobs:
         with: 
           name: site 
           path: ./public
-      - name: link check (lychee) | internal links only
+      - name: link check (lychee) | link check live site | internal links
         uses: lycheeverse/lychee-action@v2.4.1
         with:
           args: >

@@ -1,0 +1,8 @@
+# hugo.ci.yml: settings for ci builds
+# 
+# CI builds run for every pull request into main.
+# We want the generated HTML's links to contain relative URLs
+# that can be parsed by the offline CI link-checker (lychee).
+
+baseURL: "/"
+relativeURLs: true
