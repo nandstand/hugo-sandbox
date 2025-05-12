@@ -5,4 +5,3 @@
 # that can be parsed by the offline CI link-checker (lychee).
 
 baseURL: "/"
-relativeURLs: true
