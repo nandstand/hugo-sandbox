@@ -16,4 +16,4 @@ Here is some **text.**
 
 [Here is a link to a post using a root-relative link](/posts/second/).
 
-[Here is a link to a post using a page-relative link](posts/second/).
+[Here is a link to a post using a page-relative link](../../posts/second/).
