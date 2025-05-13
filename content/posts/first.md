@@ -15,3 +15,5 @@ Here is some **text.**
 [Here is a link to a post using an absolute URL (unsafe, not checked by ci link checks)](https://nandstand.github.io/hugo-sandbox/posts/second/).
 
 [Here is a link to a post using a root-relative link](/posts/second/).
+
+[Bad link](/posts/bad-link/).
