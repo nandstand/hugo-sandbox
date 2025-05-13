@@ -19,13 +19,19 @@ jobs:
         with:
           hugo-version: '0.147.1'
           extended: true
-      - name: generate ci site build for offline testing
-        run: hugo --minify --config hugo.yml,hugo.ci.yml
+      - name: mirror dir structure of prod site 
+        run: mkdir -p site-root
+      - name: generate ci site build
+        run: >
+          hugo  
+          --minify
+          --baseURL "http://localhost:8080/hugo-sandbox/"
+          --destination site-root/hugo-sandbox
       - name: upload site
         uses: actions/upload-artifact@v4
         with:
           name: site
-          path: public
+          path: ./site-root
           retention-days: 1
 
   lint-md:
@@ -47,14 +53,16 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: site
-          path: ./public
+          path: ./site-root
+      - name: serve site
+        run: npx http-server site-root -p 8080 --silent &
       - name: link check (lychee) | offline, internal links only
         uses: lycheeverse/lychee-action@v2.4.1
         with:
           args: >
-            --offline
-            --base ./public
+            --base "http://localhost:8080/hugo-sandbox/"
             --no-progress
             --verbose
-            './public/**/*.html'
+            --accept 200,206
+            './site-root/**/*.html'
 
