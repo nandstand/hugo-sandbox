@@ -15,5 +15,3 @@ Here is some **text.**
 [Here is a link to a post using an absolute URL (checked at ci + deploy by link checker).](https://nandstand.github.io/hugo-sandbox/posts/second/).
 
 [Here is a link to a post using a root-relative link (checked at ci + deploy by link checker).](/hugo-sandbox/posts/second/)
-
-[Here is a link to a post using a page-relative link (not handled well by the link checker with site root at subdir).](../second/)
