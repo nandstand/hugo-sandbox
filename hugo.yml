@@ -5,6 +5,17 @@ theme: hyde
 frontmatter:
   format: yaml
 
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about
+      weight: 100
+    - identifier: contact
+      name: Contact
+      url: /contact
+      weight: 200
+
 params:
   themeColor: theme-base-0c
   description: Learning Hugo and GitHub CI/CD
