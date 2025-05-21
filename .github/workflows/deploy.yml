@@ -21,7 +21,7 @@ jobs:
           hugo-version: '0.147.1' 
           extended: true
       - name: generate site 
-        run: hugo --minify 
+        run: hugo
       - name: upload site artifact
         uses: actions/upload-artifact@v4
         with:
