@@ -5,3 +5,4 @@ theme: hyde
 frontmatter:
   format: yaml
 enableEmoji: true
+enableGitInfo: true
