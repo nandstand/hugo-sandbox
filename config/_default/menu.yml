@@ -1,0 +1,13 @@
+main:
+  - name: About me
+    url: /about-me/
+    weight: 50
+  - name: About this site
+    url: /about-this-site/
+    weight: 100
+  - name: Posts
+    url: /posts/
+    weight: 150
+  - name: Portfolio
+    url: /portfolio/
+    weight: 200
