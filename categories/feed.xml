@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://nandstand.github.io/hugo-sandbox/xml/base.min.xml"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on Hugo Sandbox</title><link>https://nandstand.github.io/hugo-sandbox/categories/</link><description>Recent content in Categories on Hugo Sandbox</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 21 May 2025 22:44:32 -0500</lastBuildDate><atom:link href="https://nandstand.github.io/hugo-sandbox/categories/feed.xml" rel="self" type="application/rss+xml"/><item><title>Second</title><link>https://nandstand.github.io/hugo-sandbox/posts/second/</link><pubDate>Wed, 07 May 2025 16:34:46 -0500</pubDate><guid>https://nandstand.github.io/hugo-sandbox/posts/second/</guid><description>
+
+
+
+&lt;h2 id="my-second-post">
+ &lt;a class="Heading-link u-clickable" href="https://nandstand.github.io/hugo-sandbox/posts/second/#my-second-post">My second post&lt;/a>
+&lt;/h2>
+&lt;p>More text.&lt;/p>
+
+
+
+
+&lt;h3 id="one">
+ &lt;a class="Heading-link u-clickable" href="https://nandstand.github.io/hugo-sandbox/posts/second/#one">One&lt;/a>
+&lt;/h3>
+&lt;p>Section one text.&lt;/p>
+
+
+
+
+&lt;h3 id="two">
+ &lt;a class="Heading-link u-clickable" href="https://nandstand.github.io/hugo-sandbox/posts/second/#two">Two&lt;/a>
+&lt;/h3>
+&lt;p>Section two text.&lt;/p></description></item><item><title>First</title><link>https://nandstand.github.io/hugo-sandbox/posts/first/</link><pubDate>Wed, 07 May 2025 12:39:18 -0500</pubDate><guid>https://nandstand.github.io/hugo-sandbox/posts/first/</guid><description>
+
+
+
+&lt;h3 id="header">
+ &lt;a class="Heading-link u-clickable" href="https://nandstand.github.io/hugo-sandbox/posts/first/#header">Header&lt;/a>
+&lt;/h3>
+&lt;p>Here is some &lt;strong>text.&lt;/strong>&lt;/p>
+&lt;p>&lt;a href="https://nandstand.github.io/hugo-sandbox/posts/second/">Here is a link to a post using a hugo relref shortcode (checked at compile).&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://nandstand.github.io/hugo-sandbox/posts/second/">Here is a link to a post using a hugo ref shortcode (checked at compile).&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://nandstand.github.io/hugo-sandbox/posts/second/">Here is a link to a post using an absolute URL (checked at ci + deploy by link checker).&lt;/a>.&lt;/p>
+&lt;p>&lt;a href="https://nandstand.github.io/hugo-sandbox/posts/second/">Here is a link to a post using a root-relative link (checked at ci + deploy by link checker).&lt;/a>&lt;/p></description></item></channel></rss>
