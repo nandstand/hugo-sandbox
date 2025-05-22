@@ -1,12 +1,7 @@
 ---
 date:  2025-05-21T18:40:11-05:00
 draft: true
-title: About
-menu:
-  main:
-    name: About
-    url: /about/
-    weight: 50 
+title: About this site
 ---
 
 ## Header
